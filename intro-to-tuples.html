@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Tuples in Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to Tuples in Python</h1>
+    
+    <p>If you're familiar with lists in Python, you're already halfway to understanding tuples! Tuples are very similar to lists, but with a few key differences. Let's explore tuples and see how they relate to the lists you already know.</p>
+
+    <h2>What is a Tuple?</h2>
+    <p>A tuple is an ordered collection of items, just like a list. The main difference is that tuples use parentheses () instead of square brackets [].</p>
+
+    <h2>Creating Tuples</h2>
+    <p>Here's how you can create a tuple:</p>
+    <pre><code>my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)  # Output: (1, 2, 3, 4, 5)
+
+# You can also create a tuple without parentheses
+another_tuple = 'a', 'b', 'c'
+print(another_tuple)  # Output: ('a', 'b', 'c')</code></pre>
+
+    <h2>Accessing Tuple Elements</h2>
+    <p>You can access tuple elements just like you do with lists, using indexing:</p>
+    <pre><code>my_tuple = (10, 20, 30, 40, 50)
+print(my_tuple[0])  # Output: 10
+print(my_tuple[2])  # Output: 30
+print(my_tuple[-1])  # Output: 50 (last element)</code></pre>
+
+    <h2>Slicing Tuples</h2>
+    <p>Slicing works the same way as with lists:</p>
+    <pre><code>my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(my_tuple[2:5])  # Output: (3, 4, 5)
+print(my_tuple[:3])   # Output: (1, 2, 3)
+print(my_tuple[7:])   # Output: (8, 9, 10)</code></pre>
+
+    <h2>Tuple Packing and Unpacking</h2>
+    <p>You can pack multiple values into a tuple and unpack them into separate variables:</p>
+    <pre><code># Packing
+coordinates = (3, 4)
+
+# Unpacking
+x, y = coordinates
+print(x)  # Output: 3
+print(y)  # Output: 4</code></pre>
+
+    <h2>Using Tuples in Functions</h2>
+    <p>Tuples are great for returning multiple values from a function:</p>
+    <pre><code>def get_dimensions():
+    return (1920, 1080)
+
+width, height = get_dimensions()
+print(f"Width: {width}, Height: {height}")
+# Output: Width: 1920, Height: 1080</code></pre>
+
+    <h2>Tuples vs Lists</h2>
+    <p>While tuples and lists are similar, there are some key differences:</p>
+    <ul>
+        <li>Tuples use parentheses (), lists use square brackets []</li>
+        <li>Tuples are immutable (can't be changed after creation)</li>
+        <li>Tuples are often used for heterogeneous data, lists for homogeneous data</li>
+        <li>Tuples can be used as dictionary keys, lists cannot</li>
+    </ul>
+
+    <div class="note">
+        <strong>Note:</strong> Tuples will appear in the practice midterm and may be included in the actual midterm exam. Make sure you're comfortable with creating tuples, accessing their elements, and unpacking them.
+    </div>
+
+    <p>By understanding tuples, you're adding another powerful tool to your Python toolkit. Keep practicing, and you'll find that tuples can be very useful in many programming scenarios!</p>
+</body>
+</html>
